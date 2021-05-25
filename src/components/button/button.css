@@ -1,5 +1,31 @@
-.button{
-   background: #ccc;
-   padding: 15px 20px;
 
+.button {
+   border-radius: 12px;
+   border:none;
+   text-align: center;
 }
+
+.button__medium{
+   padding: 16px 18px;
+}
+
+.button__small{
+   padding: 12px 14px;
+}
+
+.button__big{
+   padding: 19px 20px;
+}
+
+.button__secondary{
+   color: #000;
+   background-color: #fff;
+   border:1px solid #1F41F7;
+}
+
+.button__primary{
+   background-color: #1F41F7;
+   color:#ffffff;
+}
+
+ 
