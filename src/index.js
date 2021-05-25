@@ -1,21 +1,8 @@
 import React from 'react';
-import './style.css'
+import './App.css'
 import ReactDOM from 'react-dom'
-import {Button} from './components/button/button'
+import App from './App'
 
-const App = () =>{
-   return (
-      <div>
-         ABoba
-         <Button label="Aboba" />
-         <Button label="A" />
-         <Button label="Ab" />
-         <Button label="Abo" />
 
-      </div>
-      
-   )
-}
-
-const domContainer = document.querySelector('#app');
+const domContainer = document.querySelector('#test');
 ReactDOM.render(<App />, domContainer);
