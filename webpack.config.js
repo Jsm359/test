@@ -1,26 +1,29 @@
 const path = require('path');
 
 module.exports = {
-  mode:'development',
-  entry: './src/index.js',
+  mode: 'development',
+  entry: './src/index.jsx',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),  
+    path: path.resolve(__dirname, 'dist'),
+  },
+  resolve: {
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: [
-          "style-loader",
-          "css-loader",
+          'style-loader',
+          'css-loader',
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               postcssOptions: {
                 plugins: [
                   [
-                    "postcss-preset-env",
+                    'postcss-preset-env',
                     {
                       // Options
                     },
@@ -31,20 +34,19 @@ module.exports = {
           },
         ],
       },
-      
+
       {
         test: /\.js?x$/i,
-        use:[
-          "babel-loader",
-        ]
+        use: [
+          'babel-loader',
+        ],
       },
-      
+
     ],
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     port: 1488,
-    compress:true
-  }  
+    compress: true,
+  },
 };
-
