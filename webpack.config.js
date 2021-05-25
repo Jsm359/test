@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode:'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -30,14 +31,20 @@ module.exports = {
           },
         ],
       },
+      
       {
         test: /\.js$/i,
         use:[
           "babel-loader",
         ]
-      }
+      },
+      
     ],
   },
-
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    port: 1488,
+    compress:true
+  }  
 };
 

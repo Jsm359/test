@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "start": "npx webpack serve"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "css-loader": "^5.2.5",
     "postcss-loader": "^5.3.0",
     "postcss-preset-env": "^6.7.0",
+    "prop-types": "^15.7.2",
     "style-loader": "^2.0.0",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0",
