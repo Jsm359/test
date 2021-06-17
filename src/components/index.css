@@ -5,4 +5,13 @@
 
 .btn{
    margin-top: 50px;
+   margin-left: 5rem;
+}
+
+
+svg{
+   width: 10px;
+   position: absolute;
+   right: 0;
+   top:8px;
 }

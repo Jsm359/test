@@ -1,0 +1,14 @@
+.input{
+   width:100%;
+   padding: 12px 20px;
+   border-radius: 12px;
+   border:2px solid rgba(234, 237, 238, 1);
+}
+
+.input:focus{
+   border:2px solid rgba(31, 65, 247, 1);
+}
+
+.input:focus-visible{
+   outline: 0;
+}

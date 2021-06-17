@@ -1,0 +1,12 @@
+.nativeSelect{
+  width:100%;
+  border:1px solid #ccc;
+  padding: 11px 103px 11px 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.nativeSelect:focus-visible{
+  outline: none;
+}
