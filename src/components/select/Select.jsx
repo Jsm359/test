@@ -32,7 +32,7 @@ function Select(props) {
      <div className='select-wrap' ref={wrapperRef}>
       <div className={`select ${open ? 'select-active' : ''}`} onClick={e => setOpen(!open)}>
         {value}
-        <FaChevronDown />
+          <FaChevronDown className={`rotate ${open ? 'rotate-active' : ''}`} />
         <div
         className={`select-list ${open ? 'select-list-active' : ''}`}>
           {props.options.map((item) => {

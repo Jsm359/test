@@ -30,7 +30,7 @@ class Button extends React.Component {
 }
 
 Button.defaultProps = {
-  size: 'medium',
+  size: 'small',
 };
 
 Button.propTypes = {

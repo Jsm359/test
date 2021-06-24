@@ -4,6 +4,7 @@ import Input from './components/input/input';
 import Form from './components/form/form';
 import NativeSelect from './components/select/NativeSelect';
 import Select from './components/select/Select';
+import Toggle from './components/toggle/Toggle';
 import './components/index.css';
 
 function FormItem(props) {
@@ -19,14 +20,14 @@ function App() {
     <div>
       <h1 className="title">React test</h1>
       <div className="btn">
-        <Button label="Button" type="secondary" size="big" />
+        <Button label="Button" type="primary" size="small" />
       </div>
       <Form onSubmit={Form}>
         <FormItem>
           <Input />
         </FormItem>
         <FormItem>
-          <Select options={['red', 'green', 'blue']} />
+          <NativeSelect options={['red', 'green', 'blue']} />
         </FormItem>
         <FormItem>
           <Select options={['red', 'green', 'blue']} />
@@ -35,6 +36,7 @@ function App() {
           <Select options={['red', 'green', 'blue']} />
         </FormItem>
       </Form>
+      <Toggle />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import './NativeSelect.css';
 
 function NativeSelect(props) {
   return (
-    <select className='nativeSelect'>
+    <select className="nativeSelect">
       {props.options.map((item) => {
         return (<option key={item}>{item}</option>)
       })}
