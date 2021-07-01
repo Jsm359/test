@@ -15,15 +15,15 @@ class Button extends React.Component {
     this.setState({
       count: this.state.count + 1,
     });
+    console.log(this.state.count);
   }
 
   render() {
-    const className = `button button__${this.props.type} button__${this.props.size}`;
+    const className = `button button-animate button__${this.props.type} button__${this.props.size}`;
 
     return (
       <button className={className} onClick={this.onClick}>
         {this.props.label}
-        {this.state.count}
       </button>
     );
   }
