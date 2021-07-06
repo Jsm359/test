@@ -10,11 +10,11 @@ function ProgressBar () {
   
   return (
     <div className="container">
-      <h1>ПОШЕЛ НАХУЙ</h1>
+      <h1>/</h1>
       <div className="progressbar-container">
         <div className="progressbar-complete" style={{width: `${completed}%`}}>
         </div>
-        <span className="progress">МАТЬ ШЛЮХА</span>
+        <span className="progress">/</span>
       </div>
     </div>
   )
