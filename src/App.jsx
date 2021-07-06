@@ -5,6 +5,7 @@ import Form from './components/form/form';
 import NativeSelect from './components/select/NativeSelect';
 import Select from './components/select/Select';
 import Toggle from './components/toggle/Toggle';
+import ProgressBar from './components/progress/progress'
 import './components/index.css';
 
 function FormItem(props) {
@@ -37,6 +38,7 @@ function App() {
         </FormItem>
       </Form>
       <Toggle />
+      <ProgressBar />
     </div>
   );
 }
